@@ -51,6 +51,7 @@
 		341AA41D20E49E4D00A585AE /* DocumentBrowserTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentBrowserTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		341AA42120E49E4D00A585AE /* DocumentBrowserTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentBrowserTestUITests.m; sourceTree = "<group>"; };
 		341AA42320E49E4D00A585AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3437893120F32DD600AD3E54 /* DocumentBrowserTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocumentBrowserTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		341AA3FC20E49E4C00A585AE /* DocumentBrowserTest */ = {
 			isa = PBXGroup;
 			children = (
+				3437893120F32DD600AD3E54 /* DocumentBrowserTest.entitlements */,
 				341AA3FD20E49E4C00A585AE /* AppDelegate.h */,
 				341AA3FE20E49E4C00A585AE /* AppDelegate.m */,
 				341AA40020E49E4C00A585AE /* ViewController.h */,
@@ -199,6 +201,11 @@
 				TargetAttributes = {
 					341AA3F920E49E4C00A585AE = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					341AA41120E49E4D00A585AE = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -434,12 +441,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82533649EW;
 				INFOPLIST_FILE = DocumentBrowserTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = skoinfo.co.kr.DocumentBrowserTest;
+				PRODUCT_BUNDLE_IDENTIFIER = skoinfo2.co.kr.DocumentBrowserTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,12 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82533649EW;
 				INFOPLIST_FILE = DocumentBrowserTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = skoinfo.co.kr.DocumentBrowserTest;
+				PRODUCT_BUNDLE_IDENTIFIER = skoinfo2.co.kr.DocumentBrowserTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
